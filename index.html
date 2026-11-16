@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rizal in Belgium: A Journey with José Rizal</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,500&family=Inter:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="intro" aria-hidden="true"><div><div class="t"><span>Rizal in Belgium</span></div><div class="flag"><i></i><i></i><i></i></div><small>1890 · 1891</small></div></div>
+<div id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand"><i>JR</i>Rizal in Belgium</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span></button>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="#belgium">Belgium</a>
+      <a href="#journey">Journey</a>
+      <a href="#places">Places</a>
+      <a href="#people">People</a>
+      <a href="#ideas">Ideas</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#facts">Facts</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <svg class="hero-bg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g class="grid">
+      <line x1="0" y1="150" x2="1440" y2="150"/><line x1="0" y1="300" x2="1440" y2="300"/><line x1="0" y1="450" x2="1440" y2="450"/><line x1="0" y1="600" x2="1440" y2="600"/><line x1="0" y1="750" x2="1440" y2="750"/>
+      <line x1="240" y1="0" x2="240" y2="900"/><line x1="480" y1="0" x2="480" y2="900"/><line x1="720" y1="0" x2="720" y2="900"/><line x1="960" y1="0" x2="960" y2="900"/><line x1="1200" y1="0" x2="1200" y2="900"/>
+    </g>
+    <text class="sea" x="140" y="120">NORTH SEA</text>
+    <path id="routePath" class="route" d="M1040 800 C1000 640 1120 520 1080 360 S900 240 780 230"/>
+    <path fill="var(--gold)" d="M0 -7 L14 0 L0 7 L4 0 Z">
+      <animateMotion dur="12s" repeatCount="indefinite" rotate="auto"><mpath href="#routePath"/></animateMotion>
+    </path>
+    <g class="city" transform="translate(1040 800)"><circle r="4" fill="var(--gold)"/><circle class="pulse" r="6"/><text x="14" y="4">PARIS</text></g>
+    <g class="city" transform="translate(1080 360)"><circle r="4" fill="var(--gold)"/><circle class="pulse" r="6" style="animation-delay:.8s"/><text x="14" y="4">BRUSSELS</text></g>
+    <g class="city" transform="translate(780 230)"><circle r="4" fill="var(--gold)"/><circle class="pulse" r="6" style="animation-delay:1.6s"/><text x="14" y="4">GHENT</text></g>
+  </svg>
+  <svg class="compass" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="#f2c230" stroke-width="1">
+    <circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="76"/><circle cx="100" cy="100" r="40"/>
+    <path d="M100 4 L112 100 L100 196 L88 100 Z"/><path d="M4 100 L100 88 L196 100 L100 112 Z"/>
+    <path d="M32 32 L104 96 L168 168 L96 104 Z" opacity=".6"/><path d="M168 32 L104 104 L32 168 L96 96 Z" opacity=".6"/>
+  </svg>
+
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">A travel brochure · Chapter 9</span>
+      <h1>
+        <span class="line"><span style="--i:0">Travel with</span></span>
+        <span class="line"><span style="--i:1"><em>José Rizal</em></span></span>
+        <span class="line"><span style="--i:2">to Belgium</span></span>
+      </h1>
+      <p class="lead">Brussels and Ghent, 1890 to 1891. Short on money, heavy with news from home, Rizal spent these months finishing the novel that would shake the colony: <em>El Filibusterismo</em>. Pack your bags and follow him.</p>
+      <div class="btns">
+        <a class="btn gold" href="#journey">Start the journey <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#belgium">Meet Belgium</a>
+      </div>
+    </div>
+    <div class="passport-wrap">
+      <div class="passport" id="passport" aria-hidden="true">
+        <div class="shine"></div>
+        <div class="lbl">Travel record · Belgium</div>
+        <div class="big">Dr. José P. Rizal</div>
+        <p class="meta">Filipino · physician · writer · age 29</p>
+        <div class="stamps">
+          <div class="stamp" style="--r:-6deg;--d:0">Paris → Brussels<b>28 Jan 1890</b></div>
+          <div class="stamp" style="--r:5deg;--d:1;--c:#ff6b6b">Registered, Brussels<b>28 Mar 1890</b></div>
+          <div class="stamp" style="--r:-4deg;--d:2;--c:#e9e2d0">Leaves for Madrid<b>Aug 1890</b></div>
+          <div class="stamp" style="--r:4deg;--d:3">Back in Brussels<b>Apr 1891</b></div>
+          <div class="stamp" style="--r:-5deg;--d:4;--c:#ff6b6b">Arrives in Ghent<b>Jul 1891</b></div>
+          <div class="stamp" style="--r:6deg;--d:5">Fili printed<b>18 Sep 1891</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">Scroll<i></i></div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Brussels</span><span>38 Rue Philippe de Champagne</span><span>Ghent</span><span>Vlaanderenstraat</span><span>El Filibusterismo</span><span>1890 – 1891</span>
+    <span>Brussels</span><span>38 Rue Philippe de Champagne</span><span>Ghent</span><span>Vlaanderenstraat</span><span>El Filibusterismo</span><span>1890 – 1891</span>
+  </div>
+</div>
+
+<!-- PANEL 1: BELGIUM -->
+<section id="belgium">
+  <div class="wrap intro-grid">
+    <div class="reveal">
+      <span class="panel-no">Panel 1</span>
+      <span class="eyebrow">Welcome to Belgium</span>
+      <h2><span class="mask"><span>A small kingdom</span></span><span class="mask"><span>with a free press</span></span></h2>
+      <p class="big-p">Belgium sits between France, the Netherlands, Germany and Luxembourg, with a short coast on the North Sea.</p>
+      <p class="sub">It became independent in 1830, and its 1831 constitution was one of the most liberal in Europe, protecting freedom of the press. When Rizal arrived, King Leopold II was on the throne. Brussels was the elegant capital, while Ghent in Flanders was a historic university and industrial city.</p>
+    </div>
+    <div class="facts">
+      <div class="fact reveal" style="--d:1"><div class="k" data-count="1830">0</div><div class="t">Year Belgium became independent</div></div>
+      <div class="fact reveal offset" style="--d:2"><div class="k">Brussels</div><div class="t">Capital, and Rizal's first home in Belgium</div></div>
+      <div class="fact reveal" style="--d:3"><div class="k">3</div><div class="t">Languages today: Dutch, French and German</div></div>
+      <div class="fact reveal offset" style="--d:4"><div class="k">Leopold II</div><div class="t">King of the Belgians during Rizal's stay</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PANEL 2: JOURNEY -->
+<section class="journey" id="journey">
+  <div class="sticky">
+    <div class="wrap">
+      <div class="journey-head">
+        <div>
+          <span class="panel-no">Panel 2</span>
+          <span class="eyebrow">Travel diary</span>
+          <h2>Walk beside Rizal</h2>
+        </div>
+        <p>Keep scrolling to move from one diary page to the next, or tap a stop on the route.</p>
+      </div>
+      <div class="voyage" id="voyage">
+        <div class="rail"></div><div class="fill" id="vfill"></div>
+        <button class="stop" style="left:0%" data-i="0" data-label="Arrival" aria-label="Go to: Arrival"></button>
+        <button class="stop" style="left:20%" data-i="1" data-label="Brussels" aria-label="Go to: Brussels"></button>
+        <button class="stop" style="left:40%" data-i="2" data-label="Bad news" aria-label="Go to: Bad news from Calamba"></button>
+        <button class="stop" style="left:60%" data-i="3" data-label="Return" aria-label="Go to: Return to Brussels"></button>
+        <button class="stop" style="left:80%" data-i="4" data-label="Ghent" aria-label="Go to: Ghent"></button>
+        <button class="stop" style="left:100%" data-i="5" data-label="The Fili" aria-label="Go to: The Fili is printed"></button>
+        <svg class="walker" id="walker" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22h40v26H12zM24 22v-6h16v6M12 32h40"/></svg>
+      </div>
+    </div>
+
+    <div class="htrack" id="htrack">
+      <article class="ccard active">
+        <div class="art a1">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="14" width="44" height="30" rx="6"/><path d="M10 32h44M20 44l-6 12M44 44l6 12M18 22h28"/><circle cx="20" cy="38" r="2"/><circle cx="44" cy="38" r="2"/></svg>
+          <div><small>Stop 01</small><strong>Leaving Paris</strong><div class="date">28 January 1890</div></div>
+          <span class="num">01</span>
+        </div>
+        <div class="body">
+          <p class="diary">"Paris is too costly and too noisy. I need quiet to write."</p>
+          <h3>Why Rizal chose Brussels</h3>
+          <ul>
+            <li>Living costs in Paris had soared during the Universal Exposition.</li>
+            <li>The city's busy social life kept pulling him away from his writing.</li>
+            <li>He wrote to his friend Ferdinand Blumentritt that he had arrived in "the beautiful city of Brussels."</li>
+          </ul>
+          <div class="take"><b>Why it matters:</b> He gave up comfort for focus. His work came first.</div>
+        </div>
+      </article>
+
+      <article class="ccard">
+        <div class="art a2">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 56V24l22-14 22 14v32zM24 56V40h16v16M18 30h6M40 30h6"/></svg>
+          <div><small>Stop 02</small><strong>A room in Brussels</strong><div class="date">38 Rue Philippe de Champagne</div></div>
+          <span class="num">02</span>
+        </div>
+        <div class="body">
+          <p class="diary">"A modest boarding house, a desk, and my second novel."</p>
+          <h3>Writing day and night</h3>
+          <ul>
+            <li>Lodged in a boarding house run by the Jacoby sisters.</li>
+            <li>Wrote and revised <em>El Filibusterismo</em>, the sequel to the <em>Noli</em>.</li>
+            <li>Sent articles to <em>La Solidaridad</em>, the newspaper of the Filipino reform movement.</li>
+            <li>Shared lodgings with fellow Filipino José Alejandrino, an engineering student.</li>
+          </ul>
+          <div class="take"><b>Why it matters:</b> Brussels became his writing room, far from the noise of Paris.</div>
+        </div>
+      </article>
+
+      <article class="ccard">
+        <div class="art a3">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="16" width="48" height="32" rx="4"/><path d="M8 18l24 18 24-18"/></svg>
+          <div><small>Stop 03</small><strong>Bad news from home</strong><div class="date">1890</div></div>
+          <span class="num">03</span>
+        </div>
+        <div class="body">
+          <p class="diary">"Letters from Calamba bring nothing but sorrow."</p>
+          <h3>Calamba in crisis</h3>
+          <ul>
+            <li>Letters from his brother Paciano told of the worsening land dispute in Calamba.</li>
+            <li>The Dominican hacienda took the Rizal family and other tenants to court to evict them.</li>
+            <li>Restless and worried, he wanted to go home, but friends warned him it was too dangerous.</li>
+            <li>In early August 1890 he left for Madrid to seek justice for his family, without success.</li>
+          </ul>
+          <div class="take"><b>Why it matters:</b> His family's suffering made his second novel darker and angrier.</div>
+        </div>
+      </article>
+
+      <article class="ccard">
+        <div class="art a4">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 10h30l8 8v38H14zM44 10v8h8M22 28h22M22 36h22M22 44h14"/></svg>
+          <div><small>Stop 04</small><strong>Back to Brussels</strong><div class="date">April 1891</div></div>
+          <span class="num">04</span>
+        </div>
+        <div class="body">
+          <p class="diary">"The manuscript is finished. Now it must be printed."</p>
+          <h3>A finished novel, an empty wallet</h3>
+          <ul>
+            <li>He finished the manuscript of the <em>Fili</em> in Biarritz, France, on 29 March 1891.</li>
+            <li>Returned to Brussels around mid-April 1891 and stayed again with the Jacobys.</li>
+            <li>Disappointed with quarrels among the reformers in Madrid, he stepped back from the movement to focus on his book.</li>
+          </ul>
+          <div class="take"><b>Why it matters:</b> He chose to fight with a book rather than in political rivalries.</div>
+        </div>
+      </article>
+
+      <article class="ccard">
+        <div class="art a5">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M12 56V30l8-8 8 8v26M36 56V22l8-12 8 12v34M18 38h4M42 30h4M42 40h4"/></svg>
+          <div><small>Stop 05</small><strong>Ghent</strong><div class="date">5 July 1891</div></div>
+          <span class="num">05</span>
+        </div>
+        <div class="body">
+          <p class="diary">"Ghent is cheaper. Tea and biscuits will have to do."</p>
+          <h3>Living on almost nothing</h3>
+          <ul>
+            <li>Moved to Ghent, a university city, because printing there cost less than in Brussels.</li>
+            <li>Found the printer F. Meyer-Van Loo on Vlaanderenstraat, who agreed to print in installments.</li>
+            <li>Pawned his jewels and lived on tea and biscuits to save money.</li>
+            <li>When the funds ran out, printing stopped, and he even thought of burning the manuscript.</li>
+          </ul>
+          <div class="take"><b>Why it matters:</b> The <em>Fili</em> was born out of real sacrifice.</div>
+        </div>
+      </article>
+
+      <article class="ccard">
+        <div class="art a6">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 14q12-4 24 4q12-8 24-4v36q-12-4-24 4q-12-8-24-4zM32 18v36"/></svg>
+          <div><small>Stop 06</small><strong>The Fili is born</strong><div class="date">18 September 1891</div></div>
+          <span class="num">06</span>
+        </div>
+        <div class="body">
+          <p class="diary">"At last! The first copies are off the press."</p>
+          <h3>A friend saves the book</h3>
+          <ul>
+            <li>Valentin Ventura in Paris heard of his trouble and sent the money to finish printing.</li>
+            <li><em>El Filibusterismo</em> came off the press on 18 September 1891.</li>
+            <li>He sent the first copies to José Basa and Sixto Lopez in Hong Kong.</li>
+            <li>The novel was dedicated to Fathers Gomez, Burgos and Zamora (Gomburza), executed in 1872.</li>
+          </ul>
+          <div class="take"><b>Why it matters:</b> Belgium is where Rizal's most daring novel finally reached the world.</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PANEL 3: PLACES -->
+<section id="places">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="panel-no">Panel 3</span>
+      <span class="eyebrow">Important places</span>
+      <h2>Places Rizal walked</h2>
+      <p class="sub">Tap a pin on the map, or choose a place, to see what happened there.</p>
+    </div>
+    <div class="places-grid">
+      <div class="map reveal" style="--d:1">
+        <svg viewBox="0 0 420 320" role="group" aria-label="Simplified map of Belgium with Rizal's places">
+          <path class="land" d="M38 98 L80 66 L150 82 L196 58 L250 76 L300 70 L334 112 L350 152 L334 192 L356 244 L326 290 L292 252 L252 216 L202 202 L152 170 L110 152 L70 142 Z"/>
+          <text class="nb" x="20" y="44">North Sea</text>
+          <text class="nb" x="230" y="40">Netherlands</text>
+          <text class="nb" x="120" y="236">France</text>
+          <text class="nb" x="356" y="132">Germany</text>
+          <path class="trip" d="M150 300 C 170 240, 200 190, 214 142"/>
+          <path class="trip" d="M214 142 C 190 120, 160 112, 130 112"/>
+          <text class="lbl" x="120" y="312">FROM PARIS ↑</text>
+          <g class="pin" tabindex="0" role="button" aria-label="Brussels boarding house" data-p="0">
+            <circle class="halo" cx="214" cy="142" r="9"/><circle class="dot" cx="214" cy="142" r="9"/>
+            <text class="lbl" x="228" y="146">BRUSSELS</text>
+          </g>
+          <g class="pin" tabindex="0" role="button" aria-label="Ghent, the university city" data-p="1">
+            <circle class="halo" cx="130" cy="112" r="9" style="animation-delay:.7s"/><circle class="dot" cx="130" cy="112" r="9"/>
+            <text class="lbl" x="92" y="96">GHENT</text>
+          </g>
+          <g class="pin" tabindex="0" role="button" aria-label="The printing press in Ghent" data-p="2">
+            <circle class="halo" cx="118" cy="128" r="6" style="animation-delay:1.4s"/><circle class="dot" cx="118" cy="128" r="6"/>
+            <text class="lbl" x="60" y="146">PRESS</text>
+          </g>
+          <text class="scale" x="300" y="312">Simplified, not to scale</text>
+        </svg>
+      </div>
+      <div class="place-info reveal" style="--d:2">
+        <div class="tabs" role="tablist" aria-label="Places">
+          <button class="tab" role="tab" aria-selected="true" data-p="0">Brussels</button>
+          <button class="tab" role="tab" aria-selected="false" data-p="1">Ghent</button>
+          <button class="tab" role="tab" aria-selected="false" data-p="2">The press</button>
+        </div>
+        <div class="pi show" data-p="0">
+          <div class="addr">38 Rue Philippe de Champagne</div>
+          <h3>The Jacoby boarding house</h3>
+          <p>Rizal's home in Brussels from early 1890, and again when he returned in 1891. Here he wrote much of <em>El Filibusterismo</em>, read letters from Calamba, and sent articles to <em>La Solidaridad</em>. Brussels city records show him registered at this address on 28 March 1890.</p>
+        </div>
+        <div class="pi" data-p="1">
+          <div class="addr">Ghent, Flanders</div>
+          <h3>A famous university city</h3>
+          <p>Rizal moved here on 5 July 1891 because printing was cheaper. He lived very simply with José Alejandrino, counting every coin while the novel was printed page by page.</p>
+        </div>
+        <div class="pi" data-p="2">
+          <div class="addr">Vlaanderenstraat, Ghent</div>
+          <h3>F. Meyer-Van Loo Press</h3>
+          <p>The print shop that produced the first edition of <em>El Filibusterismo</em> in 1891. It agreed to print in installments, which suited Rizal's thin purse. The book's title page still names this Ghent printer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PANEL 4: PEOPLE -->
+<section id="people" style="background:var(--paper2)">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="panel-no">Panel 4</span>
+      <span class="eyebrow">Important people</span>
+      <h2>Faces along the way</h2>
+      <p class="sub">The friends, hosts, and helpers who made Rizal's time in Belgium possible.</p>
+    </div>
+    <div class="people">
+      <article class="person reveal" style="--d:1">
+        <div class="av">JS</div><span class="role">Hosts in Brussels</span>
+        <h3>The Jacoby sisters</h3>
+        <p>Ran the boarding house where Rizal stayed. A young woman of the house, remembered as "Petite Suzanne," grew fond of him and cried when he left.</p>
+      </article>
+      <article class="person reveal" style="--d:2">
+        <div class="av">JA</div><span class="role">Roommate</span>
+        <h3>José Alejandrino</h3>
+        <p>A Filipino engineering student who shared Rizal's rooms. In Ghent he helped find a printer and delivered proofs to the press.</p>
+      </article>
+      <article class="person reveal" style="--d:3">
+        <div class="av">VV</div><span class="role">Rescuer, from Paris</span>
+        <h3>Valentin Ventura</h3>
+        <p>When printing stopped for lack of money, this loyal friend sent the funds to finish it. Without him, the <em>Fili</em> might never have appeared.</p>
+      </article>
+      <article class="person reveal" style="--d:4">
+        <div class="av">PR</div><span class="role">By letter, from home</span>
+        <h3>Paciano Rizal</h3>
+        <p>His older brother, whose letters about the Calamba eviction case weighed on Rizal throughout his stay.</p>
+      </article>
+      <article class="person reveal" style="--d:5">
+        <div class="av">FB</div><span class="role">By letter, Austria</span>
+        <h3>Ferdinand Blumentritt</h3>
+        <p>Rizal's closest European friend and constant correspondent, to whom he described his arrival in Brussels.</p>
+      </article>
+      <article class="person reveal" style="--d:6">
+        <div class="av">JB</div><span class="role">First readers, Hong Kong</span>
+        <h3>José Basa &amp; Sixto Lopez</h3>
+        <p>Received the first printed copies of <em>El Filibusterismo</em>, sent by Rizal on the day it came off the press.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote-sec" aria-label="Theme">
+  <div class="wrap">
+    <p id="quote">He came to Belgium with an unfinished manuscript and empty pockets. He left with a novel that would stir a <span class="hl">nation</span>.</p>
+  </div>
+</section>
+
+<!-- PANEL 5: IDEAS -->
+<section id="ideas">
+  <div class="wrap obs-grid">
+    <div class="obs-side reveal">
+      <span class="panel-no">Panel 5</span>
+      <span class="eyebrow">Events and observations</span>
+      <h2>What shaped his ideas</h2>
+      <p class="sub">How the events of 1890 and 1891 found their way into his thinking and his writing.</p>
+      <div class="meter"><i id="obsMeter"></i></div>
+    </div>
+    <div id="obsList">
+      <div class="obs reveal"><div class="n">01</div><div><h3>Injustice at Calamba</h3><p>The eviction of his family and neighbors by the hacienda showed him how powerless Filipinos were under the colonial system, even in court.</p><span class="arrow">→ The Fili's bitter, angry tone</span></div></div>
+      <div class="obs reveal"><div class="n">02</div><div><h3>Reform that went nowhere</h3><p>His failed trip to Madrid and the quarrels among Filipino reformers made him doubt that Spain would ever grant peaceful change.</p><span class="arrow">→ A darker sequel to the Noli</span></div></div>
+      <div class="obs reveal"><div class="n">03</div><div><h3>Poverty and sacrifice</h3><p>Living on tea and biscuits and pawning his jewels taught him what it costs to serve one's country with no wealth behind you.</p><span class="arrow">→ Resolve to publish no matter what</span></div></div>
+      <div class="obs reveal"><div class="n">04</div><div><h3>The memory of Gomburza</h3><p>He dedicated the novel to the three priests executed in 1872, linking his story to a wound every Filipino remembered.</p><span class="arrow">→ A book written as a tribute and a warning</span></div></div>
+      <div class="obs reveal"><div class="n">05</div><div><h3>A country with a free press</h3><p>Belgium's liberal laws allowed books critical of rulers to be printed. In Ghent, Rizal could publish what would have been banned at home.</p><span class="arrow">→ The Fili printed in full</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="timeline-sec">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">Key dates</span>
+      <h2>Belgium at a glance</h2>
+    </div>
+    <div class="tl-wrap" id="tlwrap">
+      <div class="tl-line"><i id="tlfill"></i></div>
+      <div class="tl reveal"><span class="dot"></span><div class="y">28 Jan 1890</div><h3>Leaves Paris</h3><p>Sets out for Brussels, seeking a cheaper and quieter place to write.</p></div>
+      <div class="tl reveal"><span class="dot"></span><div class="y">28 Mar 1890</div><h3>Registered in Brussels</h3><p>Listed in the city register at 38 Rue Philippe de Champagne.</p></div>
+      <div class="tl reveal"><span class="dot"></span><div class="y">Aug 1890</div><h3>To Madrid</h3><p>Leaves Brussels to seek justice for his family and the Calamba tenants.</p></div>
+      <div class="tl reveal"><span class="dot"></span><div class="y">29 Mar 1891</div><h3>Manuscript finished</h3><p>Completes <em>El Filibusterismo</em> in Biarritz, France.</p></div>
+      <div class="tl reveal"><span class="dot"></span><div class="y">Apr 1891</div><h3>Back in Brussels</h3><p>Returns to the Jacoby boarding house to prepare the book for printing.</p></div>
+      <div class="tl reveal"><span class="dot"></span><div class="y">5 Jul 1891</div><h3>Moves to Ghent</h3><p>Finds the F. Meyer-Van Loo press and begins printing in installments.</p></div>
+      <div class="tl reveal"><span class="dot"></span><div class="y">18 Sep 1891</div><h3>The Fili is published</h3><p>The first copies come off the press and are sent to friends in Hong Kong.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PANEL 6: FACTS & LESSONS -->
+<section id="facts">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="panel-no">Panel 6</span>
+      <span class="eyebrow">Did you know?</span>
+      <h2>Interesting facts</h2>
+      <p class="sub">Hover or tap a card to turn it over.</p>
+    </div>
+    <div class="flips">
+      <button class="flip reveal" style="--d:1" aria-label="Fact: Who was Petite Suzanne? Biographers long named her Suzanne Jacoby, but city records show that Suzanne Jacoby was in her mid-forties. A younger woman also lived in the house, so historians still debate who she really was.">
+        <div class="inner"><div class="face front"><span class="n">Fact 1</span><div><small>A mystery</small><h3>Who was "Petite Suzanne"?</h3></div></div>
+        <div class="face back"><p>Biographers long named her Suzanne Jacoby, but city records show that Suzanne Jacoby was in her mid-forties. A younger woman also lived in the house, so historians still debate who she really was.</p></div></div>
+      </button>
+      <button class="flip reveal" style="--d:2" aria-label="Fact: Printed in installments. The printer agreed to work bit by bit as Rizal paid. When the money ran out, the presses simply stopped.">
+        <div class="inner"><div class="face front"><span class="n">Fact 2</span><div><small>Pay as you go</small><h3>Printed in installments</h3></div></div>
+        <div class="face back"><p>The printer agreed to work bit by bit as Rizal paid. When the money ran out, the presses simply stopped until Valentin Ventura's help arrived.</p></div></div>
+      </button>
+      <button class="flip reveal" style="--d:3" aria-label="Fact: The manuscript survives. Rizal's handwritten manuscript of El Filibusterismo, which Ventura kept, was later acquired by the Philippine government and is preserved in Manila.">
+        <div class="inner"><div class="face front"><span class="n">Fact 3</span><div><small>Treasure</small><h3>The manuscript survives</h3></div></div>
+        <div class="face back"><p>The handwritten manuscript, which Valentin Ventura kept, was later acquired by the Philippine government and is preserved in Manila.</p></div></div>
+      </button>
+    </div>
+
+    <div class="reveal" style="margin-top:90px">
+      <span class="eyebrow">What we can learn</span>
+      <h2>Lessons from Rizal's journey</h2>
+    </div>
+    <div class="lessons" style="margin-top:34px">
+      <div class="lesson reveal" style="--d:1"><div class="ic">i.</div><h3>Persevere when it's hard</h3><p>Broke and worried, Rizal still finished his book. Great work often happens in the hardest seasons.</p></div>
+      <div class="lesson reveal" style="--d:2"><div class="ic">ii.</div><h3>True friends matter</h3><p>Ventura's help and Alejandrino's support remind us that no one serves the nation alone.</p></div>
+      <div class="lesson reveal" style="--d:3"><div class="ic">iii.</div><h3>Turn pain into purpose</h3><p>Rizal took his family's suffering and gave it a voice that spoke for every Filipino.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section class="sources" id="sources">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">References</span>
+      <h2>Sources</h2>
+    </div>
+    <ol>
+      <li>Zaide, G. F., &amp; Zaide, S. M. <em>José Rizal: Life, Works and Writings of a Genius, Writer, Scientist and National Hero</em>. All-Nations Publishing.</li>
+      <li>Rizal, J. (1891). <em>El Filibusterismo</em>. Ghent: F. Meyer-Van Loo. Catalog record, University of the Philippines: <a href="https://tuklas.up.edu.ph/Record/UP-99796217604454860?lng=pt-br">tuklas.up.edu.ph</a></li>
+      <li>"Rizal in Belgium." <em>Philippine Daily Inquirer</em> (Opinion): <a href="https://opinion.inquirer.net/181719/rizal-in-belgium">opinion.inquirer.net</a></li>
+      <li>"Correcting history." <em>The Freeman / Philstar</em> (Opinion), 20 July 2022: <a href="https://www.philstar.com/the-freeman/opinion/2022/07/20/2196619/correcting-history-rizal-was-not-cougars">philstar.com</a></li>
+      <li>On the first edition of <em>El Filibusterismo</em>. <em>Inquirer Plus</em>: <a href="https://plus.inquirer.net/?p=374601">plus.inquirer.net</a></li>
+      <li>"El filibusterismo." <em>Wikipedia</em>: <a href="https://en.wikipedia.org/wiki/El_filibusterismo">en.wikipedia.org</a></li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Rizal in <em>Belgium</em></div>
+    <div class="flag"><i></i><i></i><i></i></div>
+    <p>Chapter 9 Activity · A Journey Through Rizal's Travels</p>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top">
+  <svg class="ring" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="25" id="ring"/></svg>
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script src="script.js"></script>
+</body>
+</html>
