@@ -52,4 +52,8 @@ Rizal, J. (1891). El Filibusterismo. Ghent: F. Meyer-Van Loo. Catalog record, Un
 "Rizal in Belgium." Philippine Daily Inquirer, Opinion: https://opinion.inquirer.net/181719/rizal-in-belgium
 "Correcting history." The Freeman / Philstar, Opinion, 20 July 2022: https://www.philstar.com/the-freeman/opinion/2022/07/20/2196619/correcting-history-rizal-was-not-cougars
 On the first edition of El Filibusterismo. Inquirer Plus: https://plus.inquirer.net/?p=374601
+
 "El filibusterismo." Wikipedia: https://en.wikipedia.org/wiki/El_filibusterismo
+
+"El filibusterismo." Wikipedia: https://en.wikipedia.org/wiki/El_filibusterismo
+7758d4b (Fixed the hero grid cause there's no mobile breakpoint)

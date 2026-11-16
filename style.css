@@ -318,6 +318,46 @@ footer p{font-size:.88rem;margin:6px 0 0}
 .totop svg.ring circle{fill:none;stroke:var(--gold);stroke-width:2.5;stroke-dasharray:157;stroke-dashoffset:157}
 .totop svg.arrow{width:18px;height:18px}
 
+/* mobile fit */
+@media (max-width:900px){
+  section{padding:80px 0}
+  .hero{min-height:auto;padding:110px 0 90px}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .compass{width:260px;right:-70px;bottom:-70px}
+  .scroll-cue{display:none}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  section{padding:64px 0}
+  .quote-sec{padding:90px 0}
+  .brand{font-size:1rem}
+  .hero h1{font-size:clamp(2.3rem,12vw,3.2rem)}
+  .btn{padding:0 22px}
+  .passport{padding:24px 20px}
+  .passport .big{font-size:1.6rem}
+  .facts{grid-template-columns:1fr}
+  .fact.offset{margin-top:0}
+  .fact .k{font-size:1.8rem}
+  .big-p{font-size:1.2rem}
+  .intro-grid{gap:34px}
+  .htrack{padding:0 18px}
+  .ccard .body{padding:24px 22px}
+  .ccard .art strong{font-size:1.7rem}
+  .ccard .art .num{font-size:4rem}
+  .map{padding:12px;border-radius:20px}
+  .place-info{padding:24px 20px;border-radius:20px;min-height:0}
+  .obs{grid-template-columns:48px 1fr;gap:12px}
+  .obs .n{font-size:2rem}
+  .obs .arrow{border-radius:14px}
+  .flip,.flip .inner{min-height:240px}
+  .face{padding:22px}
+  .back p{font-size:.98rem}
+  .lessons{margin-top:50px}
+  .sources li{padding:16px 16px 16px 54px}
+  .sources li::before{left:16px}
+  .totop{right:14px;bottom:14px}
+}
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
   .reveal,.ccard{opacity:1!important;transform:none!important}
