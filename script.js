@@ -130,4 +130,3 @@ if (!reduce) $$('.btn').forEach(b => {
   });
   b.addEventListener('mouseleave', () => b.style.transform = '');
 });
-</script>
